@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhoneVerify Test</title>
+</head>
+<body>
+
+<h2>PhoneVerify Test Form</h2>
+
+<form id="test-form">
+  <label>Phone Number</label><br>
+  <input type="tel" name="phone" />
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
+
+<script src="https://api.phoneverify.co.uk/sdk.js"></script>
+<script>
+  PhoneVerify.init({
+    publishableKey: "YOUR_SANDBOX_KEY"
+  });
+</script>
+
+</body>
+</html>
